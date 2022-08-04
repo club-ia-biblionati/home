@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar{
+    width: 5px;
+    background-color: #3359a7;
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(201, 149, 52);
+    border-radius: 15px;
+}
+/* *************** ***************** *******/
+body{
+    background-color: white;
+}
+
+/********* ********************************/
+header{
+    padding-top: 60px;
+}
+
+.top_head{
+    padding: 10px;
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+}
+
+.top_head_content{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+
+.top_head_content span{
+    text-align: center;
+}
+
+.top_head_content span a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top_head_content img {
+    width: 40px;
+    border-radius: 50%;
+}
+/********* ********************************/
+.bottom_head{
+    background-image: url("../images/arrplane.jpg");
+    height: 550px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottom_head_cover{
+    background-color: #1b54c58a;
+    height: 550px;
+    padding-top: 150px;
+}
+
+.bottom_head_cover>p:first-child{
+    font-size: 10em;
+    width: max-content;
+    margin: 0 auto;
+    color: orange;
+    border-left: 4px solid orange;
+    padding:20px 10px 20px 70px;
+}
+.bottom_head_cover>p:last-child{
+    font-size: 1.8em;
+    width: max-content;
+    margin: 0 auto;
+    color: orange;
+    padding: 10px 5px;
+}
+/********* ********************************/
+/********* ********************************/
+/********* ********************************/
+footer{
+    background-color: pink;
+    padding: 20px 0px 3px 0px;
+}
+.menus_footer{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.menus_footer span{
+    text-align: center;
+}
+.menus_footer span a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom_band_footer{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.images_caeb{
+    background-image: url("../images/image1.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.images_caeb_cover{
+    background-color: #1b54c57c;
+    height: 500px;
+    padding-top: 150px;
+}
+
+.images_caeb_cover>p:first-child{
+    font-size: 10em;
+    width: max-content;
+    margin: 0 auto;
+    color: orange;
+    border-left: 4px solid orange;
+    padding:20px 10px 20px 70px;
+}
+.images_caeb_cover>p:last-child{
+    font-size: 1.8em;
+    width: max-content;
+    margin: 0 auto;
+    color: orange;
+    padding: 10px 5px;
+}
