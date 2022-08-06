@@ -1,0 +1,21 @@
+.element_corps{
+    background-color: white;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.element_corps img{
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.element_corps p{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 1.3em;
+    color: #003399;
+}
