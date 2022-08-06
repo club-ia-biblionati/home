@@ -361,3 +361,15 @@ footer{
         padding-top: 30px;
     }
 }
+
+/* création de l'appanrence menu en cours */
+.menus_appa{
+    background-color: #003399;
+    color: orange;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.menus_appa_mobile{
+    color: orange;
+}
