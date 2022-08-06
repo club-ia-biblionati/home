@@ -1,3 +1,4 @@
+/** Comportement de toutes les balises **/
 *{
     padding: 0;
     margin: 0;
@@ -6,6 +7,8 @@
     box-sizing: border-box;
 }
 
+
+/* personnalistion du scrollbar de la page */
 html::-webkit-scrollbar{
     width: 5px;
     background-color: #3359a7;
@@ -14,16 +17,18 @@ html::-webkit-scrollbar-thumb{
     background: rgb(201, 149, 52);
     border-radius: 15px;
 }
-/* *************** ***************** *******/
+
+/* ***personnalisation de body (le corps du site) *******/
 body{
     background-color: white;
 }
 
-/********* ********************************/
+/** Personnalistion du Header de la page **/
 header{
     padding-top: 60px;
 }
 
+/** personnalisation du menu fixe **/
 .top_head{
     padding: 10px;
     background-color: pink;
@@ -55,10 +60,102 @@ header{
     width: 40px;
     border-radius: 50%;
 }
+
+/* menu en cascade */
+.top_head_content1{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+}
+
+.top_head_content1>span{
+    text-align: right;
+    padding-right: 25px;
+}
+.top_head_content1>span>span{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    float: right;
+    width: 35px;
+    cursor: pointer;
+    padding: 3px;
+}
+.top_head_content1>span>span:hover{
+    border: 1px solid #3359a7; 
+    border-radius: 3px;
+}
+.top_head_content1>span>span hr{
+    height: 5px;
+    background-color: #3359a7;
+    border: none;
+}
+
+
+
+.content_click{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #103785e0;
+    padding: 10px 10px 10px 15px;
+}
+.content_click span{
+    text-align: left;
+    padding: 5px 30px 5px 30px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    border-left: 3px solid white;
+}
+.content_click span:hover{
+    
+    color: orange;
+    border-left: none;
+    border-right: 3px solid orange;
+}
+.content_click span:first-child{
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+}
+
+.content_click span a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.content_click span a:hover{
+    color: orange;
+}
+
+.top_head_content1 img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.top_head_content1{
+    display: none;
+}
+.content_click{
+    display: none;
+}
+/* mise en forme de la bar de menu pour la taille inférieur à 1000px */
+
+/* responsivitée de la page ....*/
+
 /********* ********************************/
 .bottom_head{
     background-image: url("../images/arrplane.jpg");
     height: 550px;
+    width: 100%;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,4 +243,53 @@ footer{
     margin: 0 auto;
     color: orange;
     padding: 10px 5px;
+}
+
+/* responsivité de la page*/
+@media screen and (min-width:1051px) {
+    
+}
+@media screen and (max-width:1050px) {
+    
+    .bottom_head_cover>p:first-child{
+        font-size: 5em;
+    }
+    .bottom_head_cover>p:last-child{
+        width: 80%;
+        text-align: center;
+    }
+    .images_caeb_cover>p:first-child{
+        font-size: 5em;
+    }
+    .images_caeb_cover>p:last-child{
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:981px) {
+    .top_head .top_head_content{
+        display: grid;
+    }
+    .top_head_content1{
+        display: none;
+    }
+    .content_click{
+        display: none;
+    }
+    #repons{
+        display: none;
+    }
+}
+@media screen and (max-width:980px) {
+    .top_head .top_head_content{
+        display: none;
+    }
+
+    .top_head_content1{
+        display: grid;
+    }
+    #repons{
+        display: grid;
+    }
 }

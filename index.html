@@ -9,7 +9,9 @@
 </head>
 <body>
     <header>
+        
         <div class="top_head">
+            <!--le menu ordinateur taille minimum de 1000px -->
             <div class="top_head_content">
                 <img src="assets/images/logoia.jpg" alt="Logo_CIA">
                 <span><a href="" title="Accueil CIA">Accueil</a></span>
@@ -18,7 +20,28 @@
                 <span><a href="" title="Les Services que nous rendons aux entreprises">Nos Services</a></span>
                 <span><a href="" title="Contactez nous pour discuter et prendre des rendez-vous...">Nous Contactez</a></span>
             </div>
+
+            <!--le menu ordinateur taille inférieur à de 1000px -->
+            <div class="top_head_content1">
+                <img src="assets/images/logoia.jpg" alt="Logo_CIA">
+                <span class="menu_cascade">
+                    <span title="Allez aux menus ..." onclick="ouvreMenus()">
+                        <hr><hr><hr>
+                    </span>
+                </span>
+            </div>
+            <div class="content_click">
+                <span onclick="fermeMenus()">&times;</span>
+                <span><a href="" title="Accueil CIA">Accueil</a></span>
+                <span><a href="" title="Visitez nos réalisations">Nos Réalisations</a></span>
+                <span><a href="" title="Navigez dans nos futures réalisations">Projections</a></span>
+                <span><a href="" title="Les Services que nous rendons aux entreprises">Nos Services</a></span>
+                <span><a href="" title="Contactez nous pour discuter et prendre des rendez-vous...">Nous Contactez</a></span>
+            </div>
         </div>
+        
+
+        <!--fin des menus -->
         <div class="bottom_head">
             <div class="bottom_head_cover">
                 <p>CLUB IA</p>
