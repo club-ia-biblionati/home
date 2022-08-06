@@ -296,6 +296,9 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
     }
+    .menus_footer span{
+        text-align: left;
+    }
 }
 @media screen and (max-width:400px) {
     .bottom_head_cover>p:first-child{
@@ -316,6 +319,10 @@ footer{
     }
     .menus_footer{
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+    .menus_footer span{
+        text-align: left;
     }
 }
 @media screen and (max-width:310px) {
