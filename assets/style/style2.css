@@ -26,3 +26,27 @@
     font-size: 1.3em;
     color: #003399;
 }
+
+/* les elsup */
+/*.elsup1, .elsup2{
+    display: none;
+}*/
+
+.elsup1{
+    z-index: 3;
+    margin-right: -100px;
+}
+.elsup2{
+    z-index: 2;
+}
+.elsup3{
+    z-index: 1;
+}
+
+/* responsivité des composantes de la page */
+@media screen and (max-width:980px) {
+   .range_un{
+    grid-template-columns: 1fr;
+   }
+}
+
