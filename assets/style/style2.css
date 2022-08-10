@@ -5,6 +5,39 @@
     margin: 0 auto;
     padding: 35px 0px 35px 0px;
 }
+
+.range_deux{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    align-items: center;
+    padding: 15px 0px;
+    border-radius: 5px;
+    border: 1px solid #003399;
+    background-color: #003399;
+}
+
+.range_deux img{
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1px solid #003399;
+}
+
+.range_deux div{
+    padding-right: 60px;
+    text-align: justify;
+    color: pink;
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+h1{
+    color: orange;
+}
+
+/* *********** ***************** */
 .element_corps{
     background-color: white;
     text-align: center;
@@ -16,6 +49,7 @@
     width: 200px;
     margin: 0 auto;
     border-radius: 50%;
+    border: 1px solid #003399;
 }
 
 .element_corps p{
@@ -27,26 +61,37 @@
     color: #003399;
 }
 
-/* les elsup */
-/*.elsup1, .elsup2{
-    display: none;
-}*/
-
-.elsup1{
-    z-index: 3;
-    margin-right: -100px;
-}
-.elsup2{
-    z-index: 2;
-}
-.elsup3{
-    z-index: 1;
+.titre{
+    text-align: center;
+    padding: 35px 0px;
 }
 
+.regles{
+    background-color: red;
+    padding: 60px;
+    color: pink;
+}
+
+.regles div{
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 30px;
+}
 /* responsivité des composantes de la page */
 @media screen and (max-width:980px) {
    .range_un{
     grid-template-columns: 1fr;
    }
+}
+@media screen and (max-width:780px) {
+   .range_deux{
+    grid-template-columns: 1fr;
+    border-radius: 60% 60% 0% 0%;
+    background-color: #1848a8;
+   }
+   .range_deux div{
+    padding-right: 25px;
+    padding-left: 25px;
+    }
 }
 
