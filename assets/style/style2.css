@@ -1,3 +1,10 @@
+.range_un{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    padding: 35px 0px 35px 0px;
+}
 .element_corps{
     background-color: white;
     text-align: center;
@@ -6,9 +13,9 @@
 }
 
 .element_corps img{
-    width: 75%;
+    width: 200px;
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 50%;
 }
 
 .element_corps p{
