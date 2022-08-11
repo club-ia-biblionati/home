@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar CIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="corps">
+        <div class="champs_mois">
+            <div class="lehaut">
+                <span title="Allez au mois précédent" onclick="moisPrecedent();"><</span>
+                <div class="tetemois"> <div class="nomMois"></div> </div>
+                <span title="Allez au mois Suivant" onclick="moisSuivant();">></span>
+            </div>
+            <div class="lebas">
+                <div class="jours"></div>
+            </div>
+            <div class="details">
+               <p class="detsp">Les informations liées à un jour s'afficheront ici.</p>
+               <p class="detsp">Cliquez simplement sur une date, et vous aurez les détails.</p>
+            </div>
+        </div>
+        <div class="champs_menus">
+            <div class="menu1">
+                <span>Aujourd'hui</span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="phoriente"> ** Allez à un mois **  <hr> </div>
+            <div class="formulaire">
+                <form action="">
+                    <div>
+                        <label for="mois">Mois</label>
+                        <select name="mois" id="moisen">
+                            <option value="Janvier">Janvier</option>
+                            <option value="Février">Février</option>
+                            <option value="Mars">Mars</option>
+                            <option value="Avril">Avril</option>
+                            <option value="Mai">Mai</option>
+                            <option value="Juin">Juin</option>
+                            <option value="Juillet">Juillet</option>
+                            <option value="Août">Août</option>
+                            <option value="Septembre">Septembre</option>
+                            <option value="Octobre">Octobre</option>
+                            <option value="Novembre">Novembre</option>
+                            <option value="Décembre">Décembre</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="annee">Année</label>
+                        <input type="number" name="annee" id="anneeen" placeholder="année" required>
+                    </div>
+                    <input type="submit" value="Atteindre" class="idenvoie">
+                </form>
+            </div>
+            <div class="phoriente"> pas d'année en virgule ou avec des lettres ... <hr> </div>
+        </div>
+    </div>
+    <div class="modal" style="display: none;">
+        <div class="modal_content">
+            <div class="btnaction">
+                <span title="Fermer la fenêtre">&times;</span>
+            </div>
+            <div class="contenu">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal2">
+        <div class="modal2_content">
+            <div class="btn2action">
+                <span title="Fermer la fenêtre">&times;</span>
+            </div>
+            <div class="contenu2">
+
+            </div>
+        </div>
+    </div>
+    <script src="calendar_script.js"></script>
+</body>
+</html>

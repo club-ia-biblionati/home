@@ -1,0 +1,39 @@
+.espace{
+    height: 50px;
+}
+
+.element_corps a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bande{
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-size: 2em;
+    padding: 30px 50px;
+}
+.bande0{
+    text-align: center;
+    background-color: rgb(59, 59, 106);
+    color: white;
+    font-size: 2em;
+    padding: 30px 50px;
+}
+
+.image_projet{
+    padding: 40px;
+    text-align: center;
+}
+
+.image_projet img{
+    width: 85%;
+    margin: 0 auto;
+}
+
+iframe{
+    margin: 50px 50px;
+    width: calc(100vw - 100px);
+    height: 600px;
+}
