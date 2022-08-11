@@ -33,7 +33,7 @@
 }
 
 iframe{
-    margin: 50px 50px;
+    margin: 50px 0px 50px 50px;
     width: calc(100vw - 100px);
     height: 600px;
 }
