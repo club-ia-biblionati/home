@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+}
+
+html::-webkit-scrollbar{
+    width: 5px;
+    background-color: #3359a7;
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(201, 149, 52);
+    border-radius: 15px;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.head{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.head span img{
+    border-radius: 50%;
+    border: 1px solid #003399;
+}
+.head span{
+    font-weight: bold;
+}
+
+.head>span:nth-child(2){
+    text-align: center;
+}
+.head>span:last-child{
+    text-align: right;
+}
+.head>span:last-child a{
+    text-decoration: none;
+    padding: 5px 12px;
+    background-color: #003399;
+    color: pink;
+}
+
+/* conteneur */
+.conteneur{
+    width: 85%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.conteneur>div{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+    border: 1px solid #003399;
+}
+.conteneur>div>div:nth-child(1){
+    background-color: pink;
+    padding: 5px;
+    border: 1px solid #003399;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.enonce{
+    background-color: white;
+    font-weight: normal;
+    padding: 8px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+
+pre{
+    border: 1px solid #003399;
+    height: 400px;
+    width: 100%;
+    overflow: auto;
+    background-color: pink;
+    color: rgb(98, 68, 11);
+    font-family: monospace;
+    font-size: 1.2em;
+    padding: 20px 5px 10px 5px;
+}
+
+.prediv{
+    padding: 10px 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: rgb(170, 163, 177);
+    text-align: center;
+    margin-top: 5px;
+    border: 1px solid #003399;
+}
+
+.prediv>span:last-child{
+    text-align: right;
+}
+.prediv>span:last-child b {
+    width: max-content;
+    background-color: blueviolet;
+    padding: 5px 15px;
+    color: pink;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.prediv>span:last-child b:hover {
+    background-color: #003399;
+}
+pre::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: #3359a7;
+}
+pre::-webkit-scrollbar-thumb{
+    background: rgb(201, 149, 52);
+    border-radius: 15px;
+}
+
+.ras{
+    min-height: 500px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 1.5em;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* footer */
+footer{
+    background-color: pink;
+    padding: 5px;
+}
+.bottom_band_footer{
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
